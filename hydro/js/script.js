@@ -10369,11 +10369,11 @@ $(".ui-switchboard").removeClass("slider-sliding");
     });
 
     cartograph.initializeBasemaps();
-    var districtsBasemap = L.tileLayer("http://raw.githubusercontent.com/jedi-Knight/Maps-of-Nepal/v2/nepal-districts-vdcs/{z}/{x}/{y}.png", {});
+    var districtsBasemap = L.tileLayer("tiles/nepal-districts-vdcs/{z}/{x}/{y}.png", {});
     map.addLayer(districtsBasemap);
     $(districtsBasemap._container).addClass("overlay-tiles districts").css("z-index", 2);
 
-    var powergridBasemap = L.tileLayer("http://raw.githubusercontent.com/jedi-Knight/Maps-of-Nepal/v2/power-grid-2/{z}/{x}/{y}.png", {});
+    var powergridBasemap = L.tileLayer("tiles/power-grid-2/{z}/{x}/{y}.png", {});
     map.addLayer(powergridBasemap);
     $(powergridBasemap._container).addClass("hidden overlay-tiles powergrid").css("z-index", 3);
 
