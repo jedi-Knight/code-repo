@@ -10432,6 +10432,8 @@ $(".ui-switchboard").removeClass("slider-sliding");
         mouseoverTriggered = 0;
 
     });
+    
+    $(".leaflet-bottom.leaflet-left").css({"margin-bottom":"36px"});
 
     map.on("move", function(e) {
         //scalefocusout = 1;
